@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PatocskaiErik/Due-Date-Calculator/issues"
   },
-  "homepage": "https://github.com/PatocskaiErik/Due-Date-Calculator#readme"
+  "homepage": "https://github.com/PatocskaiErik/Due-Date-Calculator#readme",
+  "dependencies": {
+    "mocha": "^9.2.2"
+  }
 }
