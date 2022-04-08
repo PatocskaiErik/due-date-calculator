@@ -28,4 +28,8 @@ const calculateDueDate = (date, turnaround) => {
 };
 
 const inputDate = new Date(Date.UTC(2022, 5, 2, 15, 10));
-console.log(calculateDueDate(inputDate, 10));
+console.log(calculateDueDate(inputDate, 30));
+
+exports.isWeekend = isWeekend;
+exports.isOutOfWorkingHours = isOutOfWorkingHours;
+exports.calculateDueDate = calculateDueDate;

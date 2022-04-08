@@ -4,7 +4,7 @@
   "description": "Due date calculator",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha 'specs/index.spec.js'"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/PatocskaiErik/Due-Date-Calculator#readme",
   "dependencies": {
     "mocha": "^9.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23"
   }
 }
