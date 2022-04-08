@@ -18,15 +18,14 @@ const calculateDueDate = (date, turnaround) => {
   }
 
   let counter = 0;
-
-  if (!isWeekend(date) || isOutOfWorkingHours(date)) {
-    counter++;
-  }
-  if (counter < turnaroundInMinutes) {
+  while (counter < turnaroundInMinutes) {
     date.setUTCMinutes(date.getUTCMinutes() + 1);
+    if (!(isWeekend(date) || isOutOfWorkingHours(date))) {
+      counter++;
+    }
   }
   return date;
 };
 
-const inputDate = new Date(Date.UTC(2022, 4, 8, 15, 0));
-console.log(calculateDueDate(inputDate, 30));
+const inputDate = new Date(Date.UTC(2022, 5, 2, 15, 10));
+console.log(calculateDueDate(inputDate, 10));
