@@ -1,5 +1,5 @@
-const assert = require("assert");
 const { describe, it } = require("mocha");
+const assert = require("assert");
 const index = require("../index");
 
 const notWeekend = new Date(Date.UTC(2022, 4, 5, 15, 0));
